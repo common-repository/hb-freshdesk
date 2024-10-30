@@ -1,0 +1,271 @@
+/* CSS Document */
+
+.container {
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-wrap {
+    padding: 25px;
+}
+
+/* Tab CSS */
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label {
+  color: #06c;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #06c;
+}
+
+.tabset > input:checked + label {
+  border-color: #ccc;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
+
+/*
+ Demo purposes only
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.tabset {
+  max-width: 70em;
+  padding-top: 50px;
+}
+.tab-label {
+    font-size: 18px;
+}
+
+/*========= Inner tab CSS ===========*/
+
+.section-heading {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.form-label {
+    font-size: 15px;
+    font-weight: 600;
+    padding-right: 50px;
+}
+.field-class {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.field-sub-class {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.form-label-main {
+    width: 30%;
+    float: left;
+}
+#message {
+    padding-top: 13px;
+    font-size: 17px;
+}
+
+
+
+
+
+/*FAQ page CSS*/
+.faq-class {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 30%;
+    float: left;
+    min-height: 150px;
+}
+.main-cat-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+.sub-cat-div {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.sub-cat-name {
+    font-size: 17px;
+}
+.q-a-list {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.q-a-list a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.category_diaplay_button {
+    width: 100%;
+    clear: both;
+}
+
+/* Ticket page CSS */
+.ticket-field-row {
+    width: 80%;
+    display: table;
+}
+.main-row {
+    width: 50%;
+    float: left;
+}
+.ticket-field-group {
+    /*width: 60%;*/
+    padding: 8px;
+}
+.ticket-field-label {
+    width: 100%;
+    padding: 4px 5px;
+}
+.form-control{
+    width: 85%;
+    height: 35px;
+    box-sizing: border-box;
+    border: none !important;
+    border-bottom: 2px solid #ddd !important;
+}
+
+.wp-admin select{
+    height: 35px !important;
+}
+.form-control.description-class {
+    height: 100px !important;
+    width: 93% !important;
+}
+.label {
+    font-size: 17px;
+}
+.button-class{
+    padding: 12px;
+}
+.main-row.description {
+    width: 100%;
+}
+
+/* Front side CSS */
+
+.row {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+.col-md-6 {
+    width: 50%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+}
+.entry-content a {
+    box-shadow: none !important;
+}
+
+.section-div-main, .section-div-sub, .back-button {
+    padding: 10px;
+}
+
+
+/* Single Ticket page CSS  */
+
+.ticket_subject, .ticket_desc, .ticket_conversations, .ticket_con_body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.ticket_heading {
+    font-size: 18px;
+    font-weight: bold;
+}
+.ticket_content {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.ticket-response {
+    width: 80%;
+    padding: 10px;
+}
+
+/*# sourceMappingURL=sourcemap/fd-style.css.map */
+
+.shortcode-div {
+    font-size: 15px;
+    padding: 20px;
+    background: #fff;
+}
+
+.shortcode-sub-div {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+
+#loader {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.75) url(../images/ajax-loader.gif) no-repeat center center;
+  z-index: 10000;
+}
